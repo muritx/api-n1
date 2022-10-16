@@ -1,1 +1,1 @@
-web: gunicorn api_peri:app
+web: gunicorn app:app
