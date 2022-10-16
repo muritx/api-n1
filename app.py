@@ -4,7 +4,7 @@ from bd import aparelhos
 app = Flask(__name__)
 
 @app.route("/")
-def index():
+def main():
     return "Periféricos"
 
 @app.route("/aparelhos", methods=['GET'])
@@ -48,3 +48,5 @@ def aparelho_patch():
         
     return aparelhos  
 
+if __name__ == "__main__":
+    main()
